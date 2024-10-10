@@ -3,25 +3,97 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --blue: #0071e2;
+    --blue-hover: #016dd9;
+    --red: #e74d4d;
+    --yellow: #d5d83b;
+    --pink: #e459d8;
+    --green: #06ad0c;
+    --darkred: #ff0707;
+    --orange: rgb(224, 137, 24);
+    --gold: #e7d000;
+    --lightgray: #e8e8e8;
+    --offwhite: #f2f2f2;
+    --grey: #9c9c9c;
+    --blue-grey-1: #9fa3af;
+    --blue-grey-2: #bbbec9be;
+    --secondary-grey-dark: #292929;
+    --secondary-grey-light: #dcdcdc;
+    --maindark: #121212;
+    --background: #42445A;
+    --dark: #212121;
+    --darker: #111111;
+    --semidark: #2c2c2c;
+    --toastify-toast-width: 320px;
+    --border-radius: 8px;
+    --border-radius-large: 20px;
+    --button-border-radius: 200px;
+    --toastify-text-color-light: var(--maindark);
+    --gradient: linear-gradient(141deg, rgba(191, 102, 255, 1) 0%, rgba(98, 72, 255, 1) 50%, rgba(0, 221, 235, 1) 100%);
+    --gradient-blue: linear-gradient(141deg, #188bfd, #0268ce);
+    --gradient-blue-hover: linear-gradient(141deg, #0f7ce9, #0360bd);
+    --gradient-green: linear-gradient(141deg, #06ad0c, #009105);
+    --gradient-green-hover: linear-gradient(141deg, #019c07, #017e05);
+    --toastify-color-progress-light: var(--gradient);
+    --toastify-color-dark: var(--dark);
+    --gradient-lighter: linear-gradient(141deg, rgb(200, 124, 255) 0%, rgb(116, 92, 252) 50%, rgb(63, 241, 253) 100%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --blue: #0071e2;
+    --blue-hover: #016dd9;
+    --red: #e74d4d;
+    --yellow: #d5d83b;
+    --pink: #e459d8;
+    --green: #06ad0c;
+    --darkred: #ff0707;
+    --orange: rgb(224, 137, 24);
+    --gold: #e7d000;
+    --lightgray: #e8e8e8;
+    --offwhite: #f2f2f2;
+    --grey: #9c9c9c;
+    --blue-grey-1: #9fa3af;
+    --blue-grey-2: #bbbec9be;
+    --secondary-grey-dark: #292929;
+    --secondary-grey-light: #dcdcdc;
+    --maindark: #0E0C0F;
+    --dark: #212121;
+    --darker: #111111;
+    --semidark: #2c2c2c;
+    --toastify-toast-width: 320px;
+    --border-radius: 8px;
+    --border-radius-large: 20px;
+    --button-border-radius: 200px;
+    --toastify-text-color-light: var(--maindark);
+    --gradient: linear-gradient(141deg, rgba(191, 102, 255, 1) 0%, rgba(98, 72, 255, 1) 50%, rgba(0, 221, 235, 1) 100%);
+    --gradient-blue: linear-gradient(141deg, #188bfd, #0268ce);
+    --gradient-blue-hover: linear-gradient(141deg, #0f7ce9, #0360bd);
+    --gradient-green: linear-gradient(141deg, #06ad0c, #009105);
+    --gradient-green-hover: linear-gradient(141deg, #019c07, #017e05);
+    --toastify-color-progress-light: var(--gradient);
+    --toastify-color-dark: var(--dark);
+    --gradient-lighter: linear-gradient(141deg, rgb(200, 124, 255) 0%, rgb(116, 92, 252) 50%, rgb(63, 241, 253) 100%);
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--offwhite);
+  background: var(--maindark);
   font-family: Arial, Helvetica, sans-serif;
+  cursor: none;
+  height: 100%;
+  width: 100%;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import StickyCursor from "@/components/stickyCursor";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <StickyCursor />
       </body>
     </html>
   );
